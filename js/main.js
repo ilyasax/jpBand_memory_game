@@ -81,15 +81,19 @@ const checkCards = (e) => {
             playerLives--;
             playerLivesCount.textContent = playerLives;
             if (playerLives === 0) {
-                defeatSound.play();
-                restart('ТЫ ПРОСРАЛ! НАДО СНОВА СВИНГАНУТЬ!')
+                setTimeout(() => {
+                    defeatSound.play();
+                    restart('ТЫ ПРОСРАЛ! НАДО СНОВА СВИНГАНУТЬ!');
+                }, 1000);
             }
         }
     }
     // Run a check to see if we won the game
     if (toggleCard.length === 16) {
-        winSound.play();
-        restart('ТЫ ОЧЕНЬ ХОРОШО СВИНГАНУЛ! ДЖАЗУ БЫТЬ!')
+        setTimeout(() => {
+            winSound.play();
+            restart('ТЫ ОЧЕНЬ ХОРОШО СВИНГАНУЛ! ДЖАЗУ БЫТЬ!');
+        }, 1000);
     }
 };
 
