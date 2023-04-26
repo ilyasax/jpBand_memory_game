@@ -4,8 +4,6 @@ const playerLivesCount = document.querySelector('span');
 let playerLives = 7;
 const defeatSound = new Audio('./sounds/defeatSound.mp3');
 const winSound = new Audio('./sounds/inTheMood.mp3');
-winSound.play();
-defeatSound.play();
 
 // Link text
 playerLivesCount.textContent = playerLives;
