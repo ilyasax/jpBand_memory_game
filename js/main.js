@@ -84,7 +84,7 @@ const checkCards = (e) => {
                 setTimeout(() => {
                     defeatSound.play();
                     restart('ТЫ ПРОСРАЛ! НАДО СНОВА СВИНГАНУТЬ!');
-                }, 950);
+                }, 1000);
             }
         }
     }
@@ -93,7 +93,7 @@ const checkCards = (e) => {
         setTimeout(() => {
             winSound.play();
             restart('ТЫ ОЧЕНЬ ХОРОШО СВИНГАНУЛ! ДЖАЗУ БЫТЬ!');
-        }, 950);
+        }, 1000);
     }
 };
 
@@ -115,7 +115,7 @@ const restart = (text) => {
     });
     playerLives = 7;
     playerLivesCount.textContent = playerLives;
-    setTimeout(() => window.alert(text), 1000);
+    setTimeout(() => window.alert(text), 100);
 };
 
 cardGenerator();
