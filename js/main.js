@@ -84,7 +84,7 @@ const checkCards = (e) => {
                 setTimeout(() => {
                     defeatSound.play();
                     restart('ТЫ ПРОСРАЛ! НАДО СНОВА СВИНГАНУТЬ!');
-                }, 1000);
+                }, 950);
             }
         }
     }
@@ -93,7 +93,7 @@ const checkCards = (e) => {
         setTimeout(() => {
             winSound.play();
             restart('ТЫ ОЧЕНЬ ХОРОШО СВИНГАНУЛ! ДЖАЗУ БЫТЬ!');
-        }, 1000);
+        }, 950);
     }
 };
 
