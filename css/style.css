@@ -45,6 +45,7 @@ section {
     height: 100%;
     position: absolute;
     pointer-events: none;
+    backface-visibility: hidden;
 }
 
 .back {
