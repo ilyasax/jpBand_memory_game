@@ -93,7 +93,7 @@ const checkCards = (e) => {
         setTimeout(() => {
             winSound.play();
             restart('ТЫ ОЧЕНЬ ХОРОШО СВИНГАНУЛ! ДЖАЗУ БЫТЬ!');
-        }, 1000);
+        }, 950);
     }
 };
 
@@ -115,7 +115,7 @@ const restart = (text) => {
     });
     playerLives = 7;
     playerLivesCount.textContent = playerLives;
-    setTimeout(() => window.alert(text), 100);
+    setTimeout(() => window.alert(text), 950);
 };
 
 cardGenerator();
