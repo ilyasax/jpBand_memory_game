@@ -80,6 +80,7 @@ const checkCards = (e) => {
             });
             playerLives--;
             playerLivesCount.textContent = playerLives;
+            defeatSound.stopMusic();
             if (playerLives === 0) {
                 setTimeout(() => {
                     defeatSound.play();
@@ -88,6 +89,7 @@ const checkCards = (e) => {
             }
         }
     }
+    winSound.stopMusic();
     // Run a check to see if we won the game
     if (toggleCard.length === 16) {
         setTimeout(() => {
