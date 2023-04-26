@@ -4,6 +4,8 @@ const playerLivesCount = document.querySelector('span');
 let playerLives = 7;
 const defeatSound = new Audio('./sounds/defeatSound.mp3');
 const winSound = new Audio('./sounds/inTheMood.mp3');
+winSound.play();
+defeatSound.play();
 
 // Link text
 playerLivesCount.textContent = playerLives;
@@ -80,7 +82,6 @@ const checkCards = (e) => {
             });
             playerLives--;
             playerLivesCount.textContent = playerLives;
-            defeatSound.stopMusic();
             if (playerLives === 0) {
                 setTimeout(() => {
                     defeatSound.play();
@@ -89,7 +90,6 @@ const checkCards = (e) => {
             }
         }
     }
-    winSound.stopMusic();
     // Run a check to see if we won the game
     if (toggleCard.length === 16) {
         setTimeout(() => {
